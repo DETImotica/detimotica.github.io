@@ -1,66 +1,58 @@
-# Edition
+# Website do Projeto DETImótica
+**[detimotica.github.io](https://detimotica.github.io/)**
 
-Product documentation template for Jekyll. Browse through a [live demo](https://long-pig.cloudvent.net/).
-Start documenting your product, application, service or website with this configurable theme.
+## Instalação Local
+1. Clonar o repositório
+```
+git clone https://github.com/DETImotica/detimotica.github.io.git
+```
 
-![Edition template screenshot](images/_screenshot.png)
+#### Windows 10 Nativo ou WSL
 
-Edition was made by [CloudCannon](http://cloudcannon.com/), the Cloud CMS for Jekyll.
+Por favor seguir as instruções da seguinte página: [jekyllrb.com/docs/installation/windows/](https://jekyllrb.com/docs/installation/windows/)
 
-Find more templates, themes and step-by-step Jekyll tutorials at [CloudCannon Academy](https://learn.cloudcannon.com/).
+#### Linux
 
-## Features
+2. Instalar as dependências de sistema
+```
+sudo apt-get install ruby-full build-essential zlib1g-dev
+```
 
-* Two column layout
-* Full text search
-* Pre-styled components
-* Auto-generated navigation based on category
-* Optimised for editing in [CloudCannon](http://cloudcannon.com/)
-* Change log
-* RSS/Atom feed
-* SEO tags
-* Google Analytics
+3. Permitir a execução do Ruby Gems sem permissões de administração (Opcional)
+```
+echo '# Install Ruby Gems to ~/gems' >> ~/.bashrc
+echo 'export GEM_HOME="$HOME/gems"' >> ~/.bashrc
+echo 'export PATH="$HOME/gems/bin:$PATH"' >> ~/.bashrc
+source ~/.bashrc
+```
 
-## Setup
+4. Navegar até ao diretório do repositório
+```
+cd detimotica.github.io
+```
 
-1. Add your site and author details in `_config.yml`.
-2. Get a workflow going to see your site's output (with [CloudCannon](https://app.cloudcannon.com/) or Jekyll locally).
+5. Instalar as dependências do website
+```
+gem install bundler
+bundle install
+```
 
-## Develop
+<br>
+## Utilização
 
-Edition was built with [Jekyll](http://jekyllrb.com/) version 3.3.1, but should support newer versions as well.
+No diretório do projeto, executar:
+```
+bundle exec jekyll serve
+```
 
-Install the dependencies with [Bundler](http://bundler.io/):
+O website poderá ser acedido no endereço [127.0.0.1:4000](http://127.0.0.1:4000).
 
-~~~bash
-$ bundle install
-~~~
+As alterações ao código serão automaticamente compiladas aquando da gravação dos ficheiros, pelo que bastará atualizar a página para que as mesmas se reflitam.
 
-Run `jekyll` commands through Bundler to ensure you're using the right versions:
+### Markdown (Kramdown)
 
-~~~bash
-$ bundle exec jekyll serve
-~~~
+Para referências sobre a elaboração de páginas em Markdown e ferramentas de ajuda por favor consultar:
+- [www.markdownguide.org/cheat-sheet/](https://www.markdownguide.org/cheat-sheet/)
+- [www.tablesgenerator.com/markdown_tables](https://www.tablesgenerator.com/markdown_tables)
 
-## Editing
-
-Edition is already optimised for adding, updating and removing documentation pages in CloudCannon.
-
-### Documentation pages
-
-* Add, update or remove a documentation page in the *Documentation* collection.
-* Change the category of a documentation page to move it to another section in the navigation.
-* Documentation pages are organised in the navigation by category, with URLs based on the path inside the `_docs` folder.
-
-### Change log
-
-* Add, update or remove change log entries from your posts.
-* Tag entries as minor or major in the front matter.
-
-### Search
-
-* Add `excluded_in_search: true` to any documentation page's front matter to exclude that page in the search results.
-
-### Navigation
-
-* Change `site.show_full_navigation` to control all or only the current navigation group being open.
+Template: Edition

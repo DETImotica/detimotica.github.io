@@ -1,16 +1,13 @@
 ---
-title: Registo
+title: Registo Semanal
 ---
 
-<p>Subscribe with <a href="{{ site.baseurl }}/feed.xml">RSS</a> to keep up with the latest changes.</p>
-
-<p class="editor-link"><a href="cloudcannon:collections/_posts" class="btn"><strong>&#9998;</strong> Update Change Log</a></p>
-
+<a href="{{ site.baseurl }}/feed.xml"><img src="/images/formats/rss.png" style="padding-right: 5px;" height="16" width="16">RSS</a>
 <div class="changelog">
 	{% for change in site.posts %}
 		<div class="changelog-item">
 			<h3>{{ change.title }}</h3>
-			<p><span class="date">{{ change.date | date: "%B %d, %Y" }}</span> <span class="badge {{ change.type }}">{{ change.type }}</span></p>
+			<p><span class="date">{{ change.date | date: "%d/%m/%Y" }}</span>{% if change.type %}<span class="badge {{ change.type }}">{{ change.type }}</span>{% endif %}</p>
 
 			{{ change.content }}
 

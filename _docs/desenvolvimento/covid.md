@@ -5,7 +5,7 @@ order: 3
 type: 3
 ---
 
-Dada a suspensão das atividades letivas presenciais na Universidade de Aveiro, que iniciou no dia 12 de Março, e já que os membros do grupo regressaram para a localidade de residência, tiveram que ser tomadas algumas medidas para assegurar o desenvolvimento do projeto.
+Dada a suspensão das atividades letivas presenciais na Universidade de Aveiro, que se iniciou no dia 12 de Março, e já que os membros do grupo regressaram para a localidade de residência, tiveram que ser tomadas algumas medidas para assegurar o desenvolvimento do projeto.
 Nomeadamente:
 
 ### Sensores, Microcontroladores, e componentes eletrónicos
@@ -34,12 +34,12 @@ As montagens das unidades de sensorização foram feitas de forma independente m
 
 Os seguintes sensores, encomendados através da U.C. de PEI, foram levantados no DETI no dia 8 de Abril, conforme o pedido pelo técnico do MakerLab.
 - Sensor BME680 (2 Unidades)
-- Sensor LMV324/SEN-12642 (1 Unidades)
+- Sensor LMV324/SEN-12642 (1 Unidade)
 
 Uma das unidades do BME680 foi depois enviada por correio para a residência do Ricardo Carvalho.
 
 
-Os seguintes componentes, encomendados separadamente pelos dois elementos da equipa no dia 30 de Março, ainda não foram, até ao momento, enviados devido à falta de stock de um dos itens.
+Os seguintes componentes, encomendados separadamente pelos dois elementos da equipa no dia 30 de Março, foram, devido a quebras de stock, enviados apenas no dia 8 de Abril.
 - Fonte de Alimentação para Breadboard V2 - 5V / 3.3V DC
 - Kit de 100 condensadores cerâmicos - Kemo S007
 - Condensador Cerâmico 47nF 50V (5x)
