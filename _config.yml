@@ -42,10 +42,6 @@ collections:
     title: Documentation
     permalink: /docs/:path/
     output: true
-  index:
-    title: Documentation
-    permalink: /docs/
-    output: true
 
 defaults:
   -
