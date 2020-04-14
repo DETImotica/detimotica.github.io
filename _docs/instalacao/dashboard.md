@@ -1,8 +1,8 @@
 ---
 title: Dashboard
-category: Frontend
+category: Instalação e Utilização
 order: 1
-type: 2
+type: 3
 ---
 
 A dashboard é uma maneira de mostrar visualmente os dados provenientes dos sensores, recorrendo a gráficos, por exemplo, sendo a principal forma de controlo e monitorização.
