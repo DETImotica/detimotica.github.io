@@ -49,6 +49,7 @@
 
 				{% assign tgrouped = site.docs | sort: 'type' | group_by: 'type' %}
 				{% for tgroup in tgrouped %}
+				{% if tgroup.name != '6' %}
 				<ul>
 					{% assign grouped = tgroup.items | sort: 'category' | group_by: 'category' %}
 					{% for group in grouped %}
@@ -63,6 +64,18 @@
 						</li>
 					{% endfor %}
 				</ul>
+				{% endif %}
+				{% endfor %}
+
+				{% assign tgrouped = site.docs | sort: 'type' | group_by: 'type' %}
+				{% for tgroup in tgrouped %}
+				{% if tgroup.name == '6' %}
+				<ul>
+					{% for item in tgroup.items %}
+					<li class="nav-item top-level {% if item.url == page.url %}current{% endif %}"><a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a></li>
+					{% endfor %}
+				</ul>
+				{% endif %}
 				{% endfor %}
 
 				<ul >

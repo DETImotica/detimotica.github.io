@@ -1,8 +1,7 @@
 ---
 title: Covid-19
-category: Desenvolvimento
 order: 3
-type: 3
+type: 6
 ---
 
 Dada a suspensão das atividades letivas presenciais na Universidade de Aveiro, que se iniciou no dia 12 de Março, e já que os membros do grupo regressaram para a localidade de residência, tiveram que ser tomadas algumas medidas para assegurar o desenvolvimento do projeto.
