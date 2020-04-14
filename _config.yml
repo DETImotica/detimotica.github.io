@@ -8,8 +8,8 @@ google_analytics_key:
 show_full_navigation: true
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
-logo: /siteicon.png
-description: Product documentation template for Jekyll.
+logo: /images/favicon.png
+description: Projeto DETImótica - PEI 2020
 author:
   name:
   email:
