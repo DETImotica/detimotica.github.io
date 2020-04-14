@@ -24,7 +24,7 @@ Os sensores podem ser alimentados por 3.3V ou 5V, consoante o modelo do sensor. 
 | Sensor TSL2561              | 3.3V                        |
 | Sensor BME860               | 3.3V                        |
 
-![fonte-de-alimentacao](/images/posts/fonte-alimentacao.jpg){:class="img-responsive"}
+![fonte-de-alimentacao](/images/posts/fonte_alimentacao.jpg){:class="img-responsive" .center-image}
 
 
 #### Comunicação
@@ -44,7 +44,7 @@ Os sensores comunicam de diferentes formas com o microcontrolador. Os sensores (
 
 Uma representação da montagem dos sensores encontra-se disponível na imagem em baixo. De notar também, que a tensão de saída dos sensores alimentados com 5V, isto é os sensores que disponibilizam uma saída de dados analógica, foi reduzida para 3.3V, passando por um divisor de tensão, de modo a não danificar o microcontrolador que só pode receber no máximo 3.3V. No caso do DHT11, foi necessário uma resistência de pullup na saída de dados.
 
-![montagem](/images/posts/montagem.png){:class="img-responsive"}
+![montagem](/images/posts/montagem.png){:class="img-responsive" .center-image}
 
 ### Configuração no microcontrolador
 <br>
