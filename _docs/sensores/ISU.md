@@ -24,7 +24,7 @@ Os sensores podem ser alimentados por 3.3V ou 5V, consoante o modelo do sensor. 
 | Sensor TSL2561              | 3.3V                        |
 | Sensor BME860               | 3.3V                        |
 
-![fonte-de-alimentacao](/images/posts/fonte-alimentacao.png){:class="img-responsive"}
+![fonte-de-alimentacao](/images/posts/fonte-alimentacao.jpg){:class="img-responsive"}
 
 
 #### Comunicação
