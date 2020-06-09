@@ -17,7 +17,7 @@ Esta solução impede que terceiros consigam visualizar informação sensorial �
 Adicionalmente, o facto de cada sensor possuir a sua chave de encriptação única impossibilita o envio de dados sem o conhecimento da mesma, pelo que impede terceiros de ‘se fazerem passar’ por um sensor existente e enviar dados falsos.
 
 
-![Alt text](../../images/posts/Segurança.png?raw=true "Title")
+![Alt text](/images/posts/Segurança.png?raw=true "Title")
 *Diagrama ilustrativo da arquitetura de segurança nas comunicações*
 
 De modo a evitar a manutenção de uma lista de chaves de encriptação na gateway, a chave de cada sensor é dedutível através do seu UUID e de um conjunto de chaves secretas que apenas a API e a gateway conhecem. 

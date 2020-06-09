@@ -7,7 +7,7 @@ published: true
 ---
 # Módulos Sensoriais
 
-![Alt text](../../images/posts/Sensores_diagrama.png?raw=true "Title")
+![Alt text](/images/posts/Sensores_diagrama.png?raw=true "Title")
 
 ### Microcontrolador
 
@@ -51,7 +51,7 @@ No entanto, a plataforma é dinâmica e não restringe os tipos de sensores que 
 
 As duas montagens exemplo preparadas ao longo do desenvolvimento do projeto foram realizadas de acordo com o seguinte diagrama:
 
-![Alt text](../../images/posts/montagem.png?raw=true "Title")
+![Alt text](/images/posts/montagem.png?raw=true "Title")
 *Diagrama de montagem dos módulos de sensorização integrados*
 
 De notar a necessidade de utilização de uma pequena placa de alimentação externa para o(s) sensor(es) que necessitem de input de 5V não fornecido pelo microcontrolador. Por conseguinte, é importante que os sinais de output desses sensores sejam sujeitos a um divisor de tensão de forma a limitar a voltagem a 3.3V e proteger o LoPy. 
