@@ -40,6 +40,7 @@ O aspecto mais importante da aplicação móvel é a possibilidade de visualizar
 Uma vez efectuado o login, o utilizador é levado para a página de listagem de salas. Ao iniciar, a aplicação efectua uma sequência de pedidos à API (ilustrada no Diagrama 4.15), com o objectivo de recolher informação sobre todas as salas registadas, os seus detalhes e informação sobre os sensores instalados nas mesmas.
 
 ![Sequência de aquisição dos dados das salas](/images/posts/App_AquisiçãoDeDados.png){: .center-image}
+*Sequência de aquisição dos dados das salas*
 
 Nesta altura, é possível, também procurar uma sala específica por nome.
 Por cada uma das salas listadas, o utilizador pode expandir para ter mais informações, provenientes da API, tais como uma descrição da sala e todos os sensores nela instalados.
@@ -47,6 +48,7 @@ Ao seleccionar uma sala, o utilizador é levado para a página de detalhes dos s
 A Figura 4.16 ilustra esta interface.
 
 ![Página de detalhes sensoriais](/images/posts/app.jpg){: .center-image}
+*Página de detalhes sensoriais*
 
 Usando o sistema de alertas, é, também possível activar ou desactivar (encontrando-se desactivado por defeito) notificações para cada sensor.
 
@@ -76,7 +78,8 @@ Devido à simplicidade da informação, optámos por guardar a lista de sensores
 Para os dois tipos de alertas, uma vez recebidos pelo Firebase, são reenviados para a aplicação, que apresenta uma notificação Android no telemóvel.
 Na figura 4.17 apresenta-se um exemplo de uma notificação de sensor e uma de controlo.
 
-![Exemplos de notificações](/images/notificacoes.jpg){: .center-image}
+![Exemplos de notificações](/images/posts/notificacoes.jpg){: .center-image}
+*Exemplos de notificações*
 
 | Plugins utilizados | Utilização |
 | --- | --- |
