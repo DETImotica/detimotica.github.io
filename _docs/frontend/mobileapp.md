@@ -48,7 +48,7 @@ Por cada uma das salas listadas, o utilizador pode expandir para ter mais inform
 Ao seleccionar uma sala, o utilizador é levado para a página de detalhes dos sensores, onde são listadas as informações sensoriais para cada sensor instalado. Para cada sensor, é efectuado um pedido à API, sendo recolhidos os dados do último minuto. Posteriormente, estes dados são apresentados num gráfico. É, ainda calculado o ganho em valor absoluto e percentagem. Finalmente, para cada métrica adequada, é avaliado o valor medido actualmente, num de cinco níveis, para indicar se o valor se encontra demasiado alto ou demasiado baixo.
 A Figura 4.16 ilustra esta interface.
 
-![Página de detalhes sensoriais](/images/posts/app.jpg =100x20){: .center-image}
+<img src="/images/posts/app.jpg" alt="Página de detalhes sensoriais" height="200">{: .center-image} 
 *Página de detalhes sensoriais*
 
 Usando o sistema de alertas, é, também possível activar ou desactivar (encontrando-se desactivado por defeito) notificações para cada sensor.
@@ -81,7 +81,7 @@ Devido à simplicidade da informação, optámos por guardar a lista de sensores
 Para os dois tipos de alertas, uma vez recebidos pelo Firebase, são reenviados para a aplicação, que apresenta uma notificação Android no telemóvel.
 Na figura 4.17 apresenta-se um exemplo de uma notificação de sensor e uma de controlo.
 
-![Exemplos de notificações](/images/posts/notificacoes.jpg =100x20){: .center-image}
+<img src="/images/posts/notificacoes.jpg" alt="Página de detalhes sensoriais" height="200">{: .center-image} 
 *Exemplos de notificações*
 
 | Plugins utilizados | Utilização |
