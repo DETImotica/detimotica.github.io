@@ -15,8 +15,8 @@ A framework Django foi a escolhida, pelo facto de possibilitar a interligação 
 
 Após ser autenticado com êxito na Plataforma de Gestão, o utilizador será redirecionado para a Página Inicial. Nesta, poderá visualizar os cinco atalhos para as secções referidas em seguida, bem como quatro referências para: Grafana, Documentação da API, Microsite desenvolvido para o projeto e o repositório do GitHub com o mesmo.
 
-![Exemplo da Pagina Inicial da Plataforma.](/images/plataformaGestao/paginaInicial.png?raw=true?style=centerme "Página Inicial"){: .center-image}
-<br>*Exemplo da Página Inicial da Plataforma.*
+![Exemplo da Pagina Inicial da Plataforma.](/images/plataformaGestao/paginaInicial.png?raw=true "Página Inicial"){: .center-image}
+<br>*Exemplo da Página Inicial da Plataforma.*{: .center-image}
 
 ## Salas
 
@@ -26,15 +26,15 @@ A página denominada “Salas” lista todas as salas disponíveis numa tabela o
 
 Para além disso, existe ainda a hipótese de extinguir salas listadas, bastando para isso clicar no ícone vermelho que ativará o [DELETE] /room/<UUID>.
 
-![Exemplo da criacao de um Sala na Plataforma de Gestao.](/images/plataformaGestao/criacaoSala.png?raw=true?style=centerme "Criação de uma Sala"){: .center-image}
-<br>*Exemplo da criação de um Sala na Plataforma de Gestão.*
+![Exemplo da criacao de um Sala na Plataforma de Gestao.](/images/plataformaGestao/criacaoSala.png?raw=true "Criação de uma Sala"){: .center-image}
+<br>*Exemplo da criação de um Sala na Plataforma de Gestão.*{: .center-image}
 
 ## Sensores
 
 Na secção sensores começa por ser apresentada uma lista das salas disponíveis, contendo apenas a nomenclatura de cada uma. Esta escolha baseia-se no facto dos sensores estarem organizados por divisões. À semelhança da lista de salas referida anteriormente, são obtidos os UUIDs de cada sala através do [GET] /rooms, sendo depois efetuado um novo [GET] /room/<UUID> para cada UUID obtido e apresentado o “Nome” associado ao mesmo.
 
-![Exemplo da primeira pagina apresentada na seccao Sensores.](/images/plataformaGestao/sensorsFirst.png?raw=true?style=centerme "Primeira Página dos Sensores"){: .center-image}
-<br>*Exemplo da primeira página apresentada na secção Sensores.*
+![Exemplo da primeira pagina apresentada na seccao Sensores.](/images/plataformaGestao/sensorsFirst.png?raw=true "Primeira Página dos Sensores"){: .center-image}
+<br>*Exemplo da primeira página apresentada na secção Sensores.*{: .center-image}
 
 Ao clicar no compartimento que pretende, será apresentada uma nova página onde é possível visualizar todas as informações disponíveis da própria divisão, bem como dos sensores contidos na mesma. É ainda possível efetuar diversas ações sobre os mesmos.
 
@@ -46,15 +46,15 @@ Analogamente ao que acontece na tabela das salas, é permitido adicionar, altera
 
 Um dos campos de preenchimento obrigatório na criação e/ou alteração de um dispositivo é o “Tipo de Métrica”. Esse campo é apresentado por um dropdown que contém todas as métricas disponíveis, métricas essas carregadas através do [GET] /types, seguido de um [GET] /type/<ID> para cada tipo de métrica.
 
-![Exemplo da criacao de um Sensor na Plataforma de Gestao.](/images/plataformaGestao/criacaoSensor.png?raw=true?style=centerme "Criação de um Sensor"){: .center-image}
-<br>*Exemplo da criação de um Sensor na Plataforma de Gestão.*
+![Exemplo da criacao de um Sensor na Plataforma de Gestao.](/images/plataformaGestao/criacaoSensor.png?raw=true "Criação de um Sensor"){: .center-image}
+<br>*Exemplo da criação de um Sensor na Plataforma de Gestão.*{: .center-image}
 
 Na figura acima, é possível visualizar três ações extras que não se encontram na tabela das salas, sendo que a terceira está associada à página das políticas de acesso do sensor. A primeira, representada por um ícone de uma notificação, permite enviar uma mensagem composta por “Assunto” e “Corpo”. Essa mensagem será recebida por todos os utilizadores da Aplicação Móvel que subscreveram o sensor em questão. Ao contrário dos outros endpoints que efetuam ações do tipo [POST], para além das componentes da mensagem, também o UUID do sensor é enviado no JSON no corpo do [POST] /mobile/notifications.
 
 A ação seguinte é relativa à chave de encriptação, revelando a mesma ao pressionar o ícone. Para obter a chave de encriptação AES-128, é chamado o endpoint [GET] /sensor/<UUID>/key.
 
-![Exemplo do formulario para enviar uma notificacao e da chave de encriptacao de um Sensor.](/images/plataformaGestao/notifySubscribers.png?raw=true?style=centerme "Notificar Subscritores"){: .center-image}![Exemplo do formulario para enviar uma notificacao e da chave de encriptacao de um Sensor.](/images/plataformaGestao/key.png?raw=true?style=centerme "Notificar Subscritores"){: .center-image}
-<br>*Exemplo do formulário para enviar uma notificação e da chave de encriptação de um Sensor.*
+![Exemplo do formulario para enviar uma notificacao e da chave de encriptacao de um Sensor.](/images/plataformaGestao/notifySubscribers.png?raw=true "Notificar Subscritores"){: .center-image}![Exemplo do formulario para enviar uma notificacao e da chave de encriptacao de um Sensor.](/images/plataformaGestao/key.png?raw=true "Notificar Subscritores"){: .center-image}
+<br>*Exemplo do formulário para enviar uma notificação e da chave de encriptação de um Sensor.*{: .center-image}
 
 ## Tipos de Métricas
 
@@ -64,8 +64,8 @@ Relativamente aos tipos de métricas, o processo é semelhante ao efetuado na p�
 
 Tal como nos sensores e nas divisões, é também possível criar diferentes políticas de acesso para cada tipo de métrica. O terceiro e último ícone redireciona o utilizador para a página de gestão das mesmas.
 
-![Exemplo da adicao de um novo Tipo de Sensor na Plataforma de Gestao.](/images/plataformaGestao/criacaoType.png?raw=true?style=centerme "Criação de um Tipo de Sensor"){: .center-image}
-<br>*Exemplo da adição de um novo Tipo de Sensor na Plataforma de Gestão.*
+![Exemplo da adicao de um novo Tipo de Sensor na Plataforma de Gestao.](/images/plataformaGestao/criacaoType.png?raw=true "Criação de um Tipo de Sensor"){: .center-image}
+<br>*Exemplo da adição de um novo Tipo de Sensor na Plataforma de Gestão.*{: .center-image}
 
 ## Políticas de Controlo de Acessos
 
@@ -75,7 +75,7 @@ Para obter todas as políticas de acesso associadas a um determinado objeto (sal
 
 Não destoando das restantes páginas, as ações de adicionar e de alterar uma política de acesso utilizam o [POST] /accessPolicy e [POST] /accessPolicy/<UUID>, com os detalhes das mesmas no corpo do pedido. No primeiro caso, um UUID é atribuído à política no momento da sua criação. Já para remover uma restrição de acesso, o [DELETE] /accessPolicy/<UUID> é o endpoint designado para a tarefa.
 
-![Exemplo de uma pagina de gestão das Politicas de Controlo de Acessos.](/images/plataformaGestao/criacaoType.png?raw=true?style=centerme "Página das Políticas de Controlo de Acessos"){: .center-image}
+![Exemplo de uma pagina de gestão das Politicas de Controlo de Acessos.](/images/plataformaGestao/criacaoType.png?raw=true "Página das Políticas de Controlo de Acessos"){: .center-image}
 <br>*Exemplo de uma página de gestão das Políticas de Controlo de Acessos.*
 
 O formulário para restringir ou alargar o acesso de uma política está dividido em cinco áreas: “Sujeitos”, “Contexto”, “Descrição”, “Efeito” e “Métodos”. O último é referente ao tipo de pedidos que serão alvos da política, podendo estes ser GET, POST e/ou DELETE. O “Efeito” tem apenas duas opções, sendo estas a de permissão ou proibição, caso queira alargar ou restringir o acesso, respetivamente.
@@ -86,8 +86,8 @@ Os outros dois campos são o “Dia” e a “Hora”, sendo possível combinar 
 
 No que diz respeito aos “Sujeitos”, é possível especificar os mesmos de até quatro maneiras diferentes. A primeira opção, passa por determinar se os “Administradores” devem ou não ser alvos da política pretendida. As duas seguintes, “Docentes” e “Estudantes”, quando ativas, bloqueiam ou permitem todos os docentes e estudantes por default. É, no entanto, possível especificar a(s) cadeira(s) que queremos no escopo da política, introduzindo o(s) código(s) da(s) mesma(s) na caixa de texto respetiva. Já o campo “Email” permite associar emails à política, vinculando assim indivíduos e não grupos à mesma.
 
-![Exemplo de uma Politica de Controlo de Acesso na Plataforma de Gestao.](/images/plataformaGestao/createPolicy.png?raw=true?style=centerme "Criação de uma Política de Controlo de Acessos"){: .center-image}
-<br>*Exemplo de uma Política de Controlo de Acesso na Plataforma de Gestão.*
+![Exemplo de uma Politica de Controlo de Acesso na Plataforma de Gestao.](/images/plataformaGestao/createPolicy.png?raw=true "Criação de uma Política de Controlo de Acessos"){: .center-image}
+<br>*Exemplo de uma Política de Controlo de Acesso na Plataforma de Gestão.*{: .center-image}
 
 ## Utilizadores
 
@@ -97,8 +97,8 @@ Para obter uma lista de todos os utilizadores que já efetuaram o login, bem com
 
 É assim possível visualizar todos os utilizadores que têm acesso à plataforma visto esta estar apenas disponível a administradores.
 
-![Exemplo da pagina Utilizadores da Plataforma de Gestao.](/images/plataformaGestao/usersPage.png?raw=true?style=centerme "Página de Utilizadores"){: .center-image}
-<br>*Exemplo da página Utilizadores da Plataforma de Gestão.*
+![Exemplo da pagina Utilizadores da Plataforma de Gestao.](/images/plataformaGestao/usersPage.png?raw=true "Página de Utilizadores"){: .center-image}
+<br>*Exemplo da página Utilizadores da Plataforma de Gestão.*{: .center-image}
 
 ## Notificações
 
@@ -106,5 +106,7 @@ Para além das notificações referentes a um sensor em específico, o sistema d
 
 Todos os utilizadores da Aplicação Móvel receberão, por isso, quaisquer notificações enviadas a partir desta página, sendo idealizada para alertas e informações gerais.
 
-![Exemplo da pagina de Notificacoes da Plataforma de Gestao.](/images/plataformaGestao/notifications.png?raw=true "Página de Notificações"){ width=50% }
-<br>*Exemplo da página de Notificações da Plataforma de Gestão.*
+<img src="/images/plataformaGestao/notifications.png" alt="Testing" width="500" height="600">
+
+![Exemplo da pagina de Notificacoes da Plataforma de Gestao.](../../images/plataformaGestao/notifications.png?raw=true "Página de Notificações"){: .center-image}
+<br>*Exemplo da página de Notificações da Plataforma de Gestão.*{: .center-image}
