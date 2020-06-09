@@ -32,7 +32,8 @@ Posteriormente, fez-se uso das opções de ação nativas nos requests do protoc
 | Tipos de Sensores | /type |
 | Utilizadores  | /user |
 | Políticas de Acesso | /accessPolicy |
-<i>Tabela 4.3 : Resumo dos recursos na API</i>
+
+<i>Resumo dos recursos na API</i>
 
 
 | Ação | Resultado Esperado |
@@ -40,7 +41,8 @@ Posteriormente, fez-se uso das opções de ação nativas nos requests do protoc
 | GET | devolva valores de um recurso |
 | POST | modificação (alteração dos campos do recurso) |
 | DELETE | apague um dado recurso |
-<i>Tabela 4.4 : Resumo das ações na API</i>
+
+<i>Resumo das ações na API</i>
 
 <br/>
 Exemplos:
@@ -71,7 +73,8 @@ Para terminar ainda se implementou alguns endpoints diretos, que participam na a
 Nesta seção, é sucintamente descrito o que cada endpoint é esperado que faça. Para efeitos de simplificação, não se indica que ação do protocolo http/https deve ser usada, nem quais são os parâmetros necessários no corpo do pedido, nem quais são as possíveis formas de erros e seus códigos.
 Caso seja necessário e precise de procurar saber mais acerca destes detalhes, é possível recorrer à especificação em Swagger (Documentação da API).
 
-####Rooms
+#### Rooms
+
 - /rooms - Devolve todas as salas a que os utilizadores da API têm acesso
 
 - /room - Serve para um administrador poder criar uma nova sala na API com os detalhes especificados
@@ -83,7 +86,7 @@ Caso seja necessário e precise de procurar saber mais acerca destes detalhes, �
 <i>Ações Possíveis:</i> Ver/Adicionar/Remover Sensores da Sala <br/>
 (/full) - Opção opcional que apenas serve para que o endpoint devolva toda a informação de cada sensor
 
-####Sensors
+#### Sensors
 
 - /sensors - Devolve todos os sensores a que os utilizadores da API têm acesso
 
@@ -96,7 +99,7 @@ Caso seja necessário e precise de procurar saber mais acerca destes detalhes, �
 - /sensor/< ID >/measure/< Opção > - Serve para que os utilizadores possam aceder às medições de um sensor com o identificador interno “ID” segundo uma determinada “Opção”;<br/>
 <i>Ações Possíveis:</i> Obter a última medição, Obter todas as medições num dado intervalo, Obter a média das medições num intervalo 
 
-####Types
+#### Types
 
 - /types - Devolve todos os tipos de sensores a que os utilizadores da API têm acesso
 
@@ -105,7 +108,7 @@ Caso seja necessário e precise de procurar saber mais acerca destes detalhes, �
 - /type/< ID > - Serve para que os utilizadores possam gerir/aceder aos detalhes de um determinado tipo de sensores com o identificador interno “ID;<br/>
 <i>Ações Possíveis:</i> Ver/Alterar os detalhes do Tipo de Sensor, Apagar o Tipo de Sensor
 
-####Users
+#### Users
 
 - /users (/full)* - Devolve todos os Utilizadores da API, apenas aos Administradores <br/>
 (/full) - Opção opcional que apenas serve para que o endpoint devolva toda a informação de cada Utilizador
@@ -113,7 +116,7 @@ Caso seja necessário e precise de procurar saber mais acerca destes detalhes, �
 - /user/< ID > - Serve para que os utilizadores possam gerir/aceder aos detalhes de um determinado Utilizador da API com o identificador interno “ID; <br/>
 <i>Ações Possíveis:</i> Ver detalhes do Utilizador, Atribuir/Retirar o papel de Administrador, Remover Utilizador
 
-####Access Policies
+#### Access Policies
 
 - /accessPolicies - Devolve todos as políticas de acesso aos recursos definidas na API, apenas aos Administradores
 
