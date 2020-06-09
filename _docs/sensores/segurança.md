@@ -6,8 +6,6 @@ type: 1
 published: true
 ---
 
-# Segurança nas comunicações
-
 De modo a garantir a segurança nas comunicações MQTT com dados de telemetria dos microcontroladores para a gateway, a payload das mensagens é encriptada utilizando AES-128 e de acordo com o esquema em baixo.
 
 A escolha de algoritmo visou limitar o impacto na performance dos microcontroladores sem comprometer a segurança do sistema.

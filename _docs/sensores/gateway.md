@@ -6,8 +6,6 @@ type: 1
 published: true
 ---
 
-#Gateway
-
 Equipamento agregador que está conectado à rede do MakerLab e recebe todas as mensagens MQTT enviadas pelos módulos de sensorização.
 
 Dispõe também de uma ligação à rede da Universidade de Aveiro através da VPN da mesma, por onde os dados recebidos são encaminhados para o broker da instância Eclipse Hono alojada no Instituto de Telecomunicações.

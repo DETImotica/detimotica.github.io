@@ -5,9 +5,12 @@ order: 1
 type: 1
 published: true
 ---
-# Módulos Sensoriais
+
+<br>
 
 ![Alt text](/images/posts/Sensores_diagrama.png?raw=true "Title")
+
+<br>
 
 ### Microcontrolador
 
@@ -35,7 +38,6 @@ Em cada montagem foram instalados os seguintes sensores:
 |  |Humidade (%RH)  |  +- 3%RH  |  |
 |  |Pressão (hPa)  |  +- 1hPa  |  |
 |  |Indoor Air Quality (Índice - Gases VOC)  |  ---  |  |
-|  |
 
 *Listagem de sensores requisitados e instalados*
 
