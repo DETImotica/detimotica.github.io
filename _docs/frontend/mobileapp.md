@@ -38,7 +38,7 @@ Em qualquer altura, após estar autenticado, o utilizador pode fazer o logout na
 ## Aquisição e Apresentação de Informação Sensorial
 
 O aspecto mais importante da aplicação móvel é a possibilidade de visualizar os dados sensoriais de forma rápida e conveniente. Isto é possível a qualquer utilizador autenticado no sistema, que terá acesso aos dados dos sensores que lhe sejam permitidos.
-Uma vez efectuado o login, o utilizador é levado para a página de listagem de salas. Ao iniciar, a aplicação efectua uma sequência de pedidos à API (ilustrada no Diagrama 4.15), com o objectivo de recolher informação sobre todas as salas registadas, os seus detalhes e informação sobre os sensores instalados nas mesmas.
+Uma vez efectuado o login, o utilizador é levado para a página de listagem de salas. Ao iniciar, a aplicação efectua uma sequência de pedidos à API (ilustrada no Diagrama a seguir), com o objectivo de recolher informação sobre todas as salas registadas, os seus detalhes e informação sobre os sensores instalados nas mesmas.
 
 ![Sequência de aquisição dos dados das salas](/images/posts/App_AquisiçãoDeDados.png){: .center-image}
 *Sequência de aquisição dos dados das salas*
@@ -46,9 +46,9 @@ Uma vez efectuado o login, o utilizador é levado para a página de listagem de 
 Nesta altura, é possível, também procurar uma sala específica por nome.
 Por cada uma das salas listadas, o utilizador pode expandir para ter mais informações, provenientes da API, tais como uma descrição da sala e todos os sensores nela instalados.
 Ao seleccionar uma sala, o utilizador é levado para a página de detalhes dos sensores, onde são listadas as informações sensoriais para cada sensor instalado. Para cada sensor, é efectuado um pedido à API, sendo recolhidos os dados do último minuto. Posteriormente, estes dados são apresentados num gráfico. É, ainda calculado o ganho em valor absoluto e percentagem. Finalmente, para cada métrica adequada, é avaliado o valor medido actualmente, num de cinco níveis, para indicar se o valor se encontra demasiado alto ou demasiado baixo.
-A Figura 4.16 ilustra esta interface.
+A figura seguinte ilustra esta interface.
 
-<img src="/images/posts/app.jpg" alt="Página de detalhes sensoriais" height="200">{: .center-image} 
+<img src="/images/posts/app.jpg" alt="Página de detalhes sensoriais" width="100" height="200">{: .center-image} 
 *Página de detalhes sensoriais*
 
 Usando o sistema de alertas, é, também possível activar ou desactivar (encontrando-se desactivado por defeito) notificações para cada sensor.
@@ -79,9 +79,9 @@ A aplicação móvel também pode receber alertas provenientes do sistema. Estes
 Para poder receber os alertas de sensores, a aplicação liga-se ao projecto Firebase criado para o propósito. Quando o sistema envia os alertas, estes são, também, para o projecto Firebase referido, que, por sua vez envia no tópico do respectivo sensor que é identificado pelo seu ID. Se o utilizador pretender receber notificações de um dado sensor, deve-se subscrever ao tópico do sensor que pretende. Como foi dito, todos os utilizadores estão, sempre, subscritos ao tópico de controlo. Na página de sensores de uma sala, ao lado de cada sensor, o utilizador pode activar ou desactivar os alertas do sensor em questão.
 Devido à simplicidade da informação, optámos por guardar a lista de sensores subscritos na memória interna do telemóvel, num ficheiro, contendo os ids dos mesmos.
 Para os dois tipos de alertas, uma vez recebidos pelo Firebase, são reenviados para a aplicação, que apresenta uma notificação Android no telemóvel.
-Na figura 4.17 apresenta-se um exemplo de uma notificação de sensor e uma de controlo.
+Na figura seguinte apresenta-se um exemplo de uma notificação de sensor e uma de controlo.
 
-<img src="/images/posts/notificacoes.jpg" alt="Página de detalhes sensoriais" height="200">{: .center-image} 
+<img src="/images/posts/notificacoes.jpg" alt="Página de detalhes sensoriais" width="100" height="70">{: .center-image} 
 *Exemplos de notificações*
 
 | Plugins utilizados | Utilização |
