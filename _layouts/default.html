@@ -47,6 +47,13 @@
 					</li>
 				</ul>
 
+				<ul>
+					<li class="nav-item top-level {% if page.url == '/changelog/' %}current{% endif %}">
+						{% assign changelog = site.html_pages | where: 'url', '/changelog/' | first %}
+						<a href="{{ site.baseurl }}/changelog/">{{ changelog.title }}</a>
+					</li>
+				</ul>
+
 				{% assign tgrouped = site.docs | sort: 'type' | group_by: 'type' %}
 				{% for tgroup in tgrouped %}
 				{% if tgroup.name != '6' %}
@@ -77,13 +84,6 @@
 				</ul>
 				{% endif %}
 				{% endfor %}
-
-				<ul >
-					<li class="nav-item top-level {% if page.url == '/changelog/' %}current{% endif %}">
-						{% assign changelog = site.html_pages | where: 'url', '/changelog/' | first %}
-						<a href="{{ site.baseurl }}/changelog/">{{ changelog.title }}</a>
-					</li>
-				</ul>
 			</nav>
 		</header>
 
