@@ -1,10 +1,7 @@
 ---
 title: REST API
 category: API
-<<<<<<< HEAD
-=======
 published: true
->>>>>>> 7c3fd170d2c5e124582cf5aee26a303ce984b67d
 order: 5
 type: 1
 ---
