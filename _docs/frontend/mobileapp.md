@@ -32,6 +32,7 @@ Em qualquer altura, após estar autenticado, o utilizador pode fazer o logout na
 | --- | --- |
 | [http](https://pub.dev/packages/http) | Efectuar pedidos HTTP à API |
 | [webview_flutter](https://pub.dev/packages/webview_flutter) | Apresentar a página do idp da universidade para login |
+
 *Resumo dos Plugin utilizados na aplicação móvel para autenticação*
 
 ## Aquisição e Apresentação de Informação Sensorial
@@ -40,13 +41,15 @@ O aspecto mais importante da aplicação móvel é a possibilidade de visualizar
 Uma vez efectuado o login, o utilizador é levado para a página de listagem de salas. Ao iniciar, a aplicação efectua uma sequência de pedidos à API (ilustrada no Diagrama 4.15), com o objectivo de recolher informação sobre todas as salas registadas, os seus detalhes e informação sobre os sensores instalados nas mesmas.
 
 ![Sequência de aquisição dos dados das salas](/images/posts/App_AquisiçãoDeDados.png){: .center-image}
+*Sequência de aquisição dos dados das salas*
 
 Nesta altura, é possível, também procurar uma sala específica por nome.
 Por cada uma das salas listadas, o utilizador pode expandir para ter mais informações, provenientes da API, tais como uma descrição da sala e todos os sensores nela instalados.
 Ao seleccionar uma sala, o utilizador é levado para a página de detalhes dos sensores, onde são listadas as informações sensoriais para cada sensor instalado. Para cada sensor, é efectuado um pedido à API, sendo recolhidos os dados do último minuto. Posteriormente, estes dados são apresentados num gráfico. É, ainda calculado o ganho em valor absoluto e percentagem. Finalmente, para cada métrica adequada, é avaliado o valor medido actualmente, num de cinco níveis, para indicar se o valor se encontra demasiado alto ou demasiado baixo.
 A Figura 4.16 ilustra esta interface.
 
-![Página de detalhes sensoriais](/images/posts/app.jpg){: .center-image}
+![Página de detalhes sensoriais](/images/posts/app.jpg =100x20){: .center-image}
+*Página de detalhes sensoriais*
 
 Usando o sistema de alertas, é, também possível activar ou desactivar (encontrando-se desactivado por defeito) notificações para cada sensor.
 
@@ -57,6 +60,7 @@ Usando o sistema de alertas, é, também possível activar ou desactivar (encont
 | /room/{id}/sensors | Obter a lista de ids de sensores para uma sala identificada por |
 | /sensor/ | Obter os detalhes de um sensor identificado por |
 | /sensor/{id}/measure/interval | Obtenção dos valores registados pelo sensor identificado por ao longo do último minuto |
+
 *Endpoints relevantes utilizados pela aplicação móvel*
 
 <br>
@@ -66,6 +70,7 @@ Usando o sistema de alertas, é, também possível activar ou desactivar (encont
 | [http](https://pub.dev/packages/http) | Efectuar pedidos HTTP à API |
 | [typicons_flutter](https://pub.dev/packages/typicons_flutter) | Utilização de diversos ícones relevantes |
 | [flutter_sparkline](https://pub.dev/packages/flutter_sparkline) | Apresentação de informação sensorial em gráficos |
+
 *Resumo dos plugins utilizados na aplicação móvel para apresentação dos dados*
 
 ## Sistema de Alertas
@@ -76,11 +81,13 @@ Devido à simplicidade da informação, optámos por guardar a lista de sensores
 Para os dois tipos de alertas, uma vez recebidos pelo Firebase, são reenviados para a aplicação, que apresenta uma notificação Android no telemóvel.
 Na figura 4.17 apresenta-se um exemplo de uma notificação de sensor e uma de controlo.
 
-![Exemplos de notificações](/images/notificacoes.jpg){: .center-image}
+![Exemplos de notificações](/images/posts/notificacoes.jpg =100x20){: .center-image}
+*Exemplos de notificações*
 
 | Plugins utilizados | Utilização |
 | --- | --- |
 | firebase_messaging | Interacção com o projecto Firebase |
 | flutter_local_notifications | Apresentação dos alertas numa notificação android |
 | path_provider | Identificar caminhos no sistema de ficheiros |
+
 *Resumo dos plugins utilizados na aplicação móvel para as notificações*
