@@ -34,7 +34,6 @@ Exemplo:
 ```
 telemetry/7d245a97-66c7-49eb-9940-dbb9cb24f5ec HLhUwpmNgorg7W6lf4WZhcSXMThCJ8wHcv+wavM=
 ```
-<br>
 
 Para o processamento das mensagens é utilizado um modelo producer/consumer com múltiplas threads.
 
