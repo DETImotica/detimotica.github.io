@@ -7,7 +7,7 @@ type: 1
 
 O módulo da API permite a disponibilização estruturada e organizada dos dados sensoriais, de pontos de entrada para gestão de políticas de acesso e de queries a atributos, com mecanismos de autorização/autenticação integrados. É maioritariamente desenvolvido com recurso a programas na linguagem Python (versão 3.6).
 
-### Arquitetura
+### Resumo
 
 O módulo aplicacional integra as seguintes componentes:
 
@@ -21,4 +21,4 @@ O módulo aplicacional integra as seguintes componentes:
     
     - **Time-series**, que armazena os dados de sensorização recolhidos pelo *broker* agregador (Eclipse Hono)
 
-Todos estes módulos estão a ser desenvolvidos a pensar numa instalação integrada com base em microserviços, em que cada componente é instalado com recurso a contentores Docker.
+Todos estes módulos estão a ser desenvolvidos a pensar numa instalação integrada com base em microserviços.
