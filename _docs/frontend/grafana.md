@@ -44,7 +44,8 @@ O próximo passo, passou pela configuração nos painéis dos alertas, podendo a
 A integração da autenticação na API com o Grafana foi realizada com recurso à funcionalidade de autenticação por um proxy de autenticação (Auth Proxy) que o serviço de dashboards disponibiliza.
 Esta integração utiliza as capacidades de um proxy Nginx que expõe todos os serviços web internos existentes no servidor e um endpoint especial, “/wsauthverify”, que associa uma resposta de validação de sessão por parte da API para a localização do proxy correspondente:
 
--O utilizador entra na localização que corresponde a um acesso ao servidor do Grafana. Este verifica o estado da sua sessão, com recurso ao endpoint de verificação. No caso deste já se encontrar autenticado na API, então este é, novamente, redirecionado automaticamente para a página inicial associada às dashboards.
--No caso de não estar autenticado, este é redirecionado para o endpoint de autenticação. O processo é efetuado e, no final, como já referido na secção de sessão autenticada, na explicitação dos endpoints da API, uma cookie especial de sessão é criada para o efeito. A API, por fim, redireciona-o para a página principal das dashboards.
+- O utilizador entra na localização que corresponde a um acesso ao servidor do Grafana. Este verifica o estado da sua sessão, com recurso ao endpoint de verificação. No caso deste já se encontrar autenticado na API, então este é, novamente, redirecionado automaticamente para a página inicial associada às dashboards.
+
+- No caso de não estar autenticado, este é redirecionado para o endpoint de autenticação. O processo é efetuado e, no final, como já referido na secção de sessão autenticada, na explicitação dos endpoints da API, uma cookie especial de sessão é criada para o efeito. A API, por fim, redireciona-o para a página principal das dashboards.
 
 De notar que o acesso à plataforma de dashboards é apenas admitida a administradores.
